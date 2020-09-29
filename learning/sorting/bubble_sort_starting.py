@@ -3,17 +3,7 @@ import random
 
 
 def sort(array):
-    """Sort an array of numbers! We will use bubble sort"""
-    length = len(array)
-
-    for pass_number in range(length):
-
-        for index in range(length - 1):
-            if array[index] > array[index + 1]:
-                # swap!
-                tmp = array[index]
-                array[index] = array[index + 1]
-                array[index + 1] = tmp
+    """Sort an array of numbers!"""
 
     return array
 
@@ -33,7 +23,7 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(sort(shuffled), sorted)
 
     def test_random_shuffle_multiple(self):
-        number_of_runs = 25
+        number_of_runs = 100
 
         for i in list(range(number_of_runs)):
             sorted = list(range(100))

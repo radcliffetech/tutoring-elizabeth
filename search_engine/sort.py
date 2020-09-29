@@ -1,6 +1,8 @@
+""" Sorting """
 
 
 def compare(item1, item2):
+    """This compares two dictionaries!"""
     return item1['count'] < item2['count']
 
 
