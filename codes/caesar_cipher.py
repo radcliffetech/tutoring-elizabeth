@@ -1,8 +1,8 @@
 # CAESAR CIPHER
 
+SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
 
-SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'      # valid symbols
-key = 13                                    # integer 0-26
+key = 13
 
 
 def caesar_cipher(message, mode):
@@ -31,7 +31,7 @@ def caesar_cipher(message, mode):
 
 
 # encrypt a message
-encrypted_message = caesar_cipher('CRACKERSANDCHEESEAREVERYTASTY', mode='encrypt')
+encrypted_message = caesar_cipher('Cheese and crackers are very tasty!', mode='encrypt')
 print("Encrypted:", encrypted_message)
 
 # decrypt
