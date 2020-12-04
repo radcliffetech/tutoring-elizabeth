@@ -2,10 +2,8 @@
 
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
 
-key = 13
 
-
-def caesar_cipher(message, mode):
+def do_caesar_cipher(message, key, mode):
 
     translated_message = ''
 
@@ -30,10 +28,20 @@ def caesar_cipher(message, mode):
     return translated_message
 
 
-# encrypt a message
-encrypted_message = caesar_cipher('Cheese and crackers are very tasty!', mode='encrypt')
-print("Encrypted:", encrypted_message)
+if __name__ == "__main__":
 
-# decrypt
-decrypted_message = caesar_cipher(encrypted_message, mode='decrypt')
-print("Decrypted:", decrypted_message)
+    # encrypt a message
+    encrypted_message = do_caesar_cipher(
+        'Cheese and crackers are very tasty!',
+        key=13,
+        mode='encrypt'
+    )
+    print("Encrypted:", encrypted_message)
+
+    # decrypt
+    decrypted_message = do_caesar_cipher(
+        encrypted_message,
+        key=13,
+        mode='decrypt'
+        )
+    print("Decrypted:", decrypted_message)
