@@ -1,6 +1,6 @@
 # CAESAR CIPHER
 
-SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
+SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'  # abcdefghijklmnopqrstuvwxyz1234567890 !?.'
 
 
 def do_caesar_cipher(message, key, mode):
